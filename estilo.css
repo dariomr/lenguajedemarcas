@@ -1,0 +1,60 @@
+body{margin-left: 0%;
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    background-color: rgb(36, 35, 35);
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(213, 236, 130);
+    font-size: 50px;
+    font-variant: initial;
+    background: url(Headermarcas.png);
+    text-align: center;
+    padding: 40px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(54, 54, 54);
+    font-size: 14px;
+    background-color: rgb(209, 233, 121);
+    text-align: center;
+    padding: 2px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(209, 233, 121);
+    font-size: 30px;
+    background-color: rgb(54, 54, 54);
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    font-size: 15px;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-right: 70px;
+    padding-bottom: 0px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#content {
+    max-width: 90%;
+    margin: 0 auto;
+}
