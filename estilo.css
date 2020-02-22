@@ -2,7 +2,50 @@ body{margin-left: 0%;
     margin-top: 0%;
     margin-right: 0%;
     margin-bottom: 0%;
-    background-color: rgb(36, 35, 35);
+    background-color: rgb(212, 212, 212);
+}
+
+header{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+nav.menu{
+    height: 100%;  
+    position: fixed;  
+    left: 0;
+    top: 186;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    background-color: rgb(34, 33, 33); 
+}
+
+.menu ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    background-color: rgb(34, 33, 33); 
+}
+
+.menu li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: rgb(213, 236, 130);
+  }
+
+.menu li a:active{      /*Cuando se pulsa con el ratón*/ 
+    color: rgb(213, 236, 130);
+    background-color: rgb(124, 122, 122);
+    text-decoration: none;
+}
+
+.menu li:hover{     /*Al pasar el ratón por el menú*/
+    background-color: rgb(124, 122, 122);
 }
 
 h1{
@@ -12,9 +55,8 @@ h1{
     font-variant: initial;
     background: url(Headermarcas.png);
     text-align: center;
-    padding: 40px;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    padding: 60px;
+    margin: 0;
 }
 
 h2{
@@ -34,27 +76,21 @@ h3{
     font-size: 30px;
     background-color: rgb(54, 54, 54);
     text-align: left;
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-right: 50px;
-    padding-bottom: 20px;
+    padding: 20px 50px 20px 50px;
     margin-top: 0%;
-    margin-bottom: 0%;
+    margin-bottom: 10px;
 }
 
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:white;
-    font-size: 15px;
-    padding-left: 70px;
-    padding-top: 20px;
-    padding-right: 70px;
-    padding-bottom: 0px;
+    color:rgb(0, 0, 0);
+    font-size: 12px;
+    padding: 10px 70px 0px 70px;
     margin-top: 0%;
     margin-bottom: 0%;
 }
 
-#content {
-    max-width: 90%;
-    margin: 0 auto;
+#contenido {
+   max-width: 90%;
+    margin: 0 0 0 200px; /* 200px es la anchura del menú. Así se el margen adecuado para el section principal */
 }
