@@ -24,10 +24,41 @@
         <section id="contenido">   
             <h3 title="HTML">HTML</h3>
             <article>
-            <p><b>&lt;!DOCTYPE&gt;</b></p>
-            <p>Se encuentra al principio del documento HTML y sirve como instrucción para el navegador sobre la versión de HTML en la que está escrito el documento HTML
-                <br/>En HTML5 la etiqueta se declara así: <b>&lt;!DOCTYPE html&gt;</b></p>
-                </article>
-        </section>    
+                <h4>Declaración tipo de documento &lt;!DOCTYPE&gt;</h4>
+                <p>Se encuentra al principio del documento HTML y sirve como instrucción para el navegador sobre la versión de HTML en la que está escrito el documento HTML.
+                    <br/>En HTML5 la etiqueta se declara así: <b>&lt;!DOCTYPE html&gt;</b></p>
+            </article>
+            <article>
+                <h4>&lt;html&gt;</h4>
+                <p>El elemento &lt;html&gt; es el elemento raíz del documento HTML y se cierra al final del documento con la etiqueta &lt;/html&gt;.
+                    <br/>Se puede añadir un atributo que especifica el idioma así: <b>&lt;head lang ="es"&gt;</b></p>
+            </article>
+            <article>
+                <h4>&lt;head&gt;</h4>
+                <p>El elemento &lt;head&gt; provee información general acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos.
+                    <br/>Se declara después de la etiqueta &lt;html&gt;</p>
+            </article>
+            <article>
+                <h4>&lt;title&gt;</h4>
+                <p>El elemento &lt;title&gt; especifica y da título al documento HTML.
+                    <br/>Se declara dentro del elemento &lt;head&gt; y se cierra con &lt;/title&gt;</p>
+            </article>
+            <article>
+                <h4>&lt;meta&gt;</h4>
+                <p>Proporciona metadatos (información) sobre el documento HTML aunque no se visualizan en la página web.
+                    Los metaelementos se usan generalmente para especificar la descripción de la página, las palabras clave, el autor del documento, la última modificación y otros metadatos.
+                    Se puede declarar así: <b>&lt;meta name="nombre" content="contenido"&gt;</b>
+                    <br/>La etiqueta meta va dentro del &lt;head&gt; y admite valores para name como: autor, descripcion... Por ejemplo: &lt;meta name="autor" content="Darío Marín"&gt;<br/>En HTML5 existe un nuevo atributo de la etiqueta &lt;meta&gt; para definir la codificación de carácteres que usa nuestro documento HTML. Ejemplo: &lt;meta charset="UTF-8"&gt; </p>
+            </article>
+            <article>
+               <h4>&lt;link&gt;</h4>
+               <p>Se utiliza para especificar la relación entre el documento HTML y un recurso externo. Este elemento se usa para enlazar hojas de estilos con el documento HTML.
+                    <br/>La etiqueta va dentro del &lt;head&gt; y se declara así: <b>&lt;link rel="stylesheet" type="text/css" href="hojaestilo.css"&gt;</b></p> 
+            </article>
+            <article>
+                <h4>&lt;body&gt;</h4>
+                <p>Se utiliza para representar el contenido de un documento HTML, que es lo único que visualizará el navegador. Sólo puede haber un elemento &lt;body&gt; en un documento y se cierra con su correspondiente etiqueta de cierre &lt;/body&gt;</p>
+            </article>
+        </section>
     </body>
 </html>
