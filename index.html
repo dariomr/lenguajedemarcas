@@ -11,18 +11,19 @@
         <header>
             <h1>Manual de HTML y CSS</h1>
             <h2>Creado por Darío Marín Rivarés. 1º DAM - IES Sierra de Guara, Huesca.</h2>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">Ejemplos</a></li>
+                </ul>
+            </nav>
         <header>
 
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">Ejemplos</a></li>
-            </ul>
-        </nav>
+        <section title="HTML">   
+            <h3>HTML</h3>
 
-        <section id="contenido">   
-            <h3 title="HTML">HTML</h3>
+            <h5>Comienzo del documento HTML</h5>
             <article>
                 <h4>Declaración tipo de documento &lt;!DOCTYPE&gt;</h4>
                 <p>Se encuentra al principio del documento HTML y sirve como instrucción para el navegador sobre la versión de HTML en la que está escrito el documento HTML.
@@ -35,7 +36,7 @@
             </article>
             <article>
                 <h4>&lt;head&gt;</h4>
-                <p>El elemento &lt;head&gt; provee información general acerca del documento, incluyendo su título y enlaces a scripts y hojas de estilos.
+                <p>El elemento &lt;head&gt; provee información general acerca del documento, incluyendo el título, enlaces a scripts y hojas de estilos.
                     <br/>Se declara después de la etiqueta &lt;html&gt;</p>
             </article>
             <article>
@@ -48,16 +49,309 @@
                 <p>Proporciona metadatos (información) sobre el documento HTML aunque no se visualizan en la página web.
                     Los metaelementos se usan generalmente para especificar la descripción de la página, las palabras clave, el autor del documento, la última modificación y otros metadatos.
                     Se puede declarar así: <b>&lt;meta name="nombre" content="contenido"&gt;</b>
-                    <br/>La etiqueta meta va dentro del &lt;head&gt; y admite valores para name como: autor, descripcion... Por ejemplo: &lt;meta name="autor" content="Darío Marín"&gt;<br/>En HTML5 existe un nuevo atributo de la etiqueta &lt;meta&gt; para definir la codificación de carácteres que usa nuestro documento HTML. Ejemplo: &lt;meta charset="UTF-8"&gt; </p>
+                    <br/>La etiqueta meta va dentro del &lt;head&gt; y admite valores para name como: autor, descripcion... Por ejemplo: &lt;meta name="autor" content="Darío Marín"&gt;
+                    <br/>En HTML5 existe un nuevo atributo de la etiqueta &lt;meta&gt; para definir la codificación de carácteres que usa nuestro documento HTML. Ejemplo: &lt;meta charset="UTF-8"&gt; </p>
             </article>
             <article>
                <h4>&lt;link&gt;</h4>
                <p>Se utiliza para especificar la relación entre el documento HTML y un recurso externo. Este elemento se usa para enlazar hojas de estilos con el documento HTML.
                     <br/>La etiqueta va dentro del &lt;head&gt; y se declara así: <b>&lt;link rel="stylesheet" type="text/css" href="hojaestilo.css"&gt;</b></p> 
             </article>
+
+            <h5>Formato del documento</h5>
             <article>
                 <h4>&lt;body&gt;</h4>
                 <p>Se utiliza para representar el contenido de un documento HTML, que es lo único que visualizará el navegador. Sólo puede haber un elemento &lt;body&gt; en un documento y se cierra con su correspondiente etiqueta de cierre &lt;/body&gt;</p>
+            </article>
+            <article>
+                <h4>&lt;header&gt;</h4>
+                <p>La etiqueta se utiliza para definir el encabezado de un documento o una sección, por lo que va dentro del <b>&lt;body&gt;</b> o de un elemento <b>article o section</b>. Puede contener algunos elementos de encabezado como un título, así como también un logo, un formulario de búsqueda, nombre de autor y otros componentes. Puede haber varios elementos &lt;header&gt; en el documento.
+                    <br/>Se requiere una etiqueta inicial y una etiqueta final: <b>&lt;header&gt; ... &lt;/header&gt;</b></p>
+            </article>
+            <article>
+                <h4>&lt;footer&gt;</h4>
+                <p>Se utiliza para definir un pie de página del documento HTML. Contiene la información del pie de página (información del autor, información de derechos de autor, operadores, etc.). La etiqueta de pie de página se usa dentro de la etiqueta &lt;body&gt;.
+                    <br/>Se requiere una etiqueta inicial y una etiqueta final: <b>&lt;footer&gt; ... &lt;/footer&gt;</b></p>
+            </article>
+            <article>
+                <h4>&lt;nav&gt;</h4>
+                <p> Representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes de secciones de navegación son menús, tablas de contenido e índices. Dentro de nav podemos insertar los enlaces que queremos poner para el menú y también pueden estar dentro de una lista para crear un menú lateral.
+                    <br/>Ejemplo dentro de nav con lista: <b>&lt;ul&gt; ... &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt; ... &lt;/ul&gt;</b></p>
+            </article>
+            <article>
+                <h4>&lt;aside&gt;</h4>
+                <p>Rpresenta una sección de una página que consiste en contenido que está indirectamente relacionado con el contenido principal del documento. 
+                    <br/>Estas secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a blogs relacionados. Se requiere una etiqueta inicial y una etiqueta final: <b>&lt;aside&gt; ... &lt;/aside&gt;</b></p>
+            </article>
+            <article>
+                <h4>&lt;section&gt;</h4>
+                <p>Define la sección de documentos como capítulos, encabezados, pies de página o cualquier otra sección. La etiqueta &lt;section&gt; divide el contenido en secciones y subsecciones. Debería usarse para contenido que se agrupa de acuerdo con un tema, pero solo tiene sentido en el contexto del contenido que lo rodea.
+                    <br/>Se requiere una etiqueta inicial y una etiqueta final: <b>&lt;section&gt; ... &lt;/section&gt;</b></p>
+            </article>
+            <article>
+                <h4>&lt;article&gt;</h4>
+                <p>Representa una composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a distribuir de forma independiente o reutilizable, por ejemplo, en la sindicación. Podría ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido.
+                    Se debería utilizar cuando un contenido se puede sacar de una página por completo y todavía tiene sentido por sí mismo sin contenido circundante.
+                    <br/>Se requiere una etiqueta inicial y una etiqueta final: <b>&lt;article&gt; ... &lt;/article&gt;</b></p>
+            </article>
+            <article>
+                <h4>&lt;adress&gt;</h4>
+                <p>Aporta información de contacto para su elemento &lt;article&gt; más cercano o el elemento principal &lt;body&gt;; en el último caso lo aplica a todo el documento.
+                    <br/>Generalmente la información de contacto de una persona u organización se suele ubicar en el &lt;footer&gt; del documento HTML.</p>
+            </article>
+
+            <h5>Agrupación de contenido</h5>
+            <article>
+                <h4>&lt;h1 ... h6&gt;</h4>
+                <p>Los elementos de encabezado o heading implementan seis niveles de encabezado del documento, <b>&lt;h1&gt;</b> es el más importante y <b>&lt;h6&gt;</b> es el menos importante. Un elemento de encabezado describe brevemente el tema de la sección que presenta. La información de encabezado puede ser usada por los agentes usuarios, por ejemplo, para construir una tabla de contenidos para un documento automáticamente.
+                    <br/>Por ejemplo: <b>&lt;h1&gt;Este texto es del primer tipo&lt;/h1&gt;</b></p>
+            </article>
+            <article>
+                <h4>&lt;p&gt;</h4>
+                <p>Elemento paragraph que sirve para definir un párrafo. Si se agregan varios espacios, el navegador los reduce a un solo espacio y lo mismo con los saltos de línea. Se requiere etiqueta de apertura y cierre.
+                    <br/>Por ejemplo: <b>&lt;p&gt;Esto es un párrafo&lt;/p&gt;</b></p>
+            </article>
+            <article>
+                <h4>&lt;pre&gt;</h4>
+                <p>Sirve para representar texto preformateado. El texto en este elemento se muestra en una fuente fija (monoespaciada), no proporcional, exactamente como es mostrado en el archivo. Los espacios dentro de este elemento también son mostrados como están escritos.</p>
+            </article>
+            <article>
+                <h4>&lt;ol&gt;</h4>
+                <p>El elemento ordered list permite definir listas o viñetas ordenadas, bien con numeración o alfabéticamente.
+                    <br/>Se pueden definir atributos como <b>type="(1|a|A|i|I)"</b> para dar diferentes estilos de numeración, <b>compact</b> para que el espacio entre los elementos de la lista sea reducido, <b>start</b> para indicar el número inicial de la lista ordenada y <b>reversed</b> para indicar si el orden va al revés.
+                        Dentro de la lista, los elementos se representan con la etiqueta &lt;li&gt;. Ejemplo: <b>&lt;ol&gt; ... &lt;li&gt;punto 1&lt;/li&gt; ... &lt;/ol&gt;</b></p>
+            </article>
+            <article>
+                <h4>&lt;ul&gt;</h4>
+                <p>El elemento unordered list permite crear listas no ordenadas. Contiene uno o más elementos &lt;li&gt;. Admite atributos como: <b>type="disc|square|circle"</b> para definir el estilo de los elementos de la lista y <b>compact</b> para que el espacio entre los elementos de la lista sea reducido.</p>
+            </article>
+            <article>
+                <h4>&lt;hr&gt;</h4>
+                <p>En HTML5 representa un cambio de tema entre párrafos (por ejemplo, un cambio de escena en una historia, un cambio de tema en una sección). En versiones previas de HTML representaba una línea horizontal.
+                    <br/>Admite atributos como <b>size</b> que indica la altura de la línea, <b>width</b> que indica la anchura (por defecto 100%). Se representa así: <b>&lt;hr/&gt;</b></p>
+            </article>
+
+            <h5>Elementos semánticos de texto</h5>
+            <article>
+                <h4>Resaltado</h4>
+                <p>Dentro de un párrafo podemos escribir el texto en cursiva, negrita y subrayado.
+                    <br/><b>Cursiva (italic): </b>&lt;i&gt;Texto en cursiva&lt;/i&gt; --> <i>Texto en cursiva</i>
+                    <br/><b>Negrita (bold): </b>&lt;b&gt;Texto en negrita&lt;/b&gt; --> <b>Texto en negrita</b>
+                    <br/><b>Subrayado (underlined): </b>&lt;u&gt;Texto subrayado&lt;/u&gt; --> <i>Texto subrayado</i></p>
+                <p>También existen otras etiquetas de formato de texto como:
+                    <br/><b>Emphasis:</b> para marcar con énfasis las partes importantes de un texto. Ejemplo: &lt;em&gt;Texto énfasis&lt;/em&gt; --> <em>Texto énfasis</em>
+                    <br/><b>Strong:</b> apropiado para marcar con especial énfasis las partes más importantes de un texto. Ejemplo: &lt;strong&gt;Texto strong&lt;/strong&gt; --> <strong>Texto strong</strong>
+                    <br/><b>Small:</b> para representar comentarios laterales y letra pequeña, incluyendo derechos de autor y texto legal. Hace el tamaño del texto una talla más pequeña. Ejemplo: &lt;small&gt;Texto small&lt;/small&gt; --> <small>Texto small</small>
+                    <br/><b>S:</b> muestra el texto tachado con una línea horizontal, texto que ya es irrelevante en el documento. Ejemplo: &lt;s&gt;Texto tachado&lt;/s&gt; --> <s>Texto tachado</s></p>
+            </article>
+            <article>
+                <h4>Salto de línea</h4>
+                <p><b>Break &lt;br&gt;:</b> produce un salto de línea en el texto (retorno de carro). Es útil para escribir un poema o una dirección, donde la división de las líneas es significante.
+                    <br/><b>Word break &lt;wbr&gt;:</b>  representa una posición dentro del texto donde el explorador puede opcionalmente saltar una línea , aunque sus reglas de salto de línea de otra manera no crearían un salto en esa posición.</p>
+            </article>
+            <article>
+                <h4>Hiperenlace</h4>
+                <p><b>La etiqueta &lt;a&gt;</b> define un hipervínculo, que se utiliza para vincular de una página a otra. El atributo href indica la dirección de enlace.
+                    <br/>Ejemplo: &lt;a href="https://www.google.com">Este texto es un enlace a la página principal de Google&lt;/a&gt; --> <a href="https://www.google.com">Este texto es un enlace a la página principal de Google</a>
+                    <br/>Además el enlace puede ser <b>absoluto:</b> http://sitio/pagina.html o <b>relativo:</b> pagina.html, subdirectorio/pagina.html, ../pagina.html
+                    <br/>También puede haber un hiperenlace interno en el mismo documento poniendo un id al elemento que queremos enlazar. Ejemplo: <b>&lt;a href="#id del elemento">Enlace al elemento&lt;/a&gt;</b>
+                    <br/>Enlace al principio del documento: href="#top"</p>
+                    <p>Algunos atributos de la etiqueta a:
+                        <br/><b>target="_blank":</b> especifica dónde abrir el documento vinculado
+                        <br/><b>download:</b> especifica que el destino se descargará cuando un usuario haga clic en el hipervínculo</p>
+            </article>
+            <h5>Imágenes y contenido encajado</h5>
+            <article>
+                <h4>Imágenes</h4>
+                <p><b>&lt;img&gt;:</b> representa una imagen en el documento.
+                    <br/>Atributo principal <b>&lt;src&gt;</b> para indicar el origen (source) de la imagen.
+                    <br/>Otros atributos para dar formato a la imgagen y características: <b>&lt;width&gt;,</b> para indicar el ancho de la imagen; <b>&lt;height&gt;,</b> para indicar el alto de la imagen; <b>&lt;alt&gt;,</b> texto alternativo que describe la imagen. Los usuarios lo verán; si la URL de la imagen es errónea.
+                    <br/>Ejemplo: <b>&lt;img src=“imagen.png” width="300" height="300" alt=“Imagen del logo”&gt;</b></p>
+            </article>
+            <article>
+                <h4>Mapas de imagen</h4>
+                <p>Sirve para crear una forma sobre una imagen que normalmente sirve de enlace a otro sitio al hacer click.
+                    <br/>Ejemplo: <b>&lt;img usemap="#mapa"&gt;</b>
+                    <br/>El mapa se declara así: <b>&lt;map name="mapa"&gt;</b> y contiene el elemento <b>&lt;area&gt;</b> que contiene atributos:</p>
+                    <p><b>shape:</b> default, rect, circle, poly
+                        <br/><b>coords:</b> especifica las coordenadas del área del mapa. Los valores dependen del shape:
+                        <br/>rect: x-izq, y-sup, x-dcha, i-inf
+                        <br/>circle: x-centro, y-centro, radio
+                        <br/>poly: x1, y1, x2, y2, ..., xN, yN
+                        <br/><b>href:</b> la url asociada
+                        <br/><b>alt:</b> describe el área o su vínculo, es necesario porque area no tiene contenido.
+                        <br/><b>download:</b> especifica que el destino se descargará cuando un usuario haga clic en el mapa de imagen
+                        <br/><b>target:</b> especifica dónde abrir el documento vinculado</p>
+            </article>
+            <article>
+                <h4>Tablas</h4>
+                <p>El elemento <b>&lt;table&gt;</b> representa datos tabulados en dos o más dimensiones.
+                    <br/>Contiene elementos <b>&lt;tr&gt;(filas) y &lt;td&gt;(columnas)</b> Además. puede incluir el elemento <b>&lt;th&gt;(encabezado).</b>
+                    <br/>Otros elementos dentro de la tabla: <b>&lt;thead&gt;</b> encabezado de tabla, <b>&lt;tbody&gt;</b> cuerpo de tabla, <b>&lt;tfoot&gt;</b> sumario de tabla y <b>&lt;caption&gt;</b> leyenda.</p>
+                    <p>Algunos atributos de las tablas:
+                        <br/><b>border="n":</b> borde (en table)
+                        <br/><b>rowspan="n":</b> expansión en columna (en td y th)
+                        <br/><b>colspan="n":</b> expansión en fila (en td y th)</p>
+            </article>
+
+            <h5>Modelos de contenido</h5>
+            <article>
+                <ul>
+                    <li>Metadatos (metadata)</li>
+                    <li>Dinámico (flow)</li>
+                    <li>Seccionado (sectioning)</li>
+                    <li>Título (heading)</li>
+                    <li>Estático (phrasing)</li>
+                    <li>Encajado (embedded)</li>
+                    <li>Interactivo (interactive)</li>
+                </ul>
+            </article>
+
+            <h5>Formularios</h5>
+            <article>
+                <h4>Formularios</h4>
+                <p><b>El elemento &lt;form&gt;</b> representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web.
+                    <br/>El formlario se declara así: <b>&lt;form action="http://sitio.com/sub/adduser" method="post"&gt;</b>
+                    <br/>Atributos de form:
+                        <br/><b>action:</b> la URI de un programa que procesa la información enviada por medio del formulario
+                        <br/><b>method:</b> el método HTTP que el navegador usa para enviar el formulario. Puede ser:<b>get</b>, los datos del formulario son adjuntados a la URI del atributo  action , con un '?' como separador,  y la URI resultante es enviada al servidor o <b>post</b>, los datos del formulario son incluidos en el cuerpo del formulario y son enviados al servidor.
+                        <br/><b>enctype:</b> cuando el valor del atributo method es post, tipo de mediatype que es usado para enviar el formulario. Posibles valores: <b>application/x-www-form-urlencoded</b>, el valor por defecto si un atributo no está especificado y <b>multipart/form-data</b> si se está usando el elemento &lt;input&gt; con el atributo type ajustado a "file".
+                        <br/><b>accept-charset:</b> una lista de codificación de caracteres que el servidor acepta.</p>
+                    <p><b>El elemento &lt;label&gt;</b> representa una etiqueta para un elemento en una interfaz de usuario.
+                        <br/>La etiqueta se declara así: <b>&lt;label for="nombre"&gt;Nombre: &lt;/label&gt;</b>
+                        <br/>Atributo de label: <b>for</b>, el ID del elemento de formulario etiquetable relacionado en el mismo documento que el elemento label. El primer elemento en el documento con tal ID que coincida con el dispuesto en el atributo for será el control etiquetado para este elemento.</p>
+                    <p><b>El elemento &lt;input&gt;</b> está relacionado con label y se usa para crear controles interactivos para formularios basados en la web, que reciban datos del usuario.
+                        <br/>Atributos de input:
+                        <br/><b>type:</b> El tipo de control a mostrar. Su valor predeterminado es text, si no se especifica este atributo. Los posibles valores son:
+                        <p><b>type="text"</b>: campo de texto de línea simple.
+                            <br/><b>type="submit"</b>: botón que envía el formulario.
+                            <br/><b>type="number"</b>: control para introducir un valor númerico. Admite atributos como <b>min, max, value (número real) y step="n"</b>
+                            <br/><b>type="checkbox"</b>: casilla de selección o verificación. Se debe usar el atributo <b>value</b> para definir el valor que se enviará por este elemento, <b>checked</b> para indicar si el elemento está seleccionado y <b>name</b>.
+                            <br/><b>type="radio"</b>:  botón de opción. Se debe usar el atributo <b>value</b> para definir el valor que se enviará por este elemento, <b>checked</b> para indicar si el elemento está seleccionado de forma predeterminada. y <b>name</b>.
+                            <br/>También existen otros atributos como: <b>password, search, tel, url, email, range, hidden, image(con su src), file accept, button, reset, date, month, week, time, color...</b></p>
+                        <p><b>name:</b> para indicar el nombre del input
+                            <br><b>id:</b> enlaza con el for de un label
+                            <br/><b>value:</b> el valor inicial del control. Este atributo es opcional, excepto cuando el atributo type es radio o checkbox.
+                            <br/><b>required:</b> el usuario debe llenar el control antes de enviarlo al formulario.
+                            <br/><b>size:</b> el tamaño inicial del control. Este valor es en píxeles, a menos que el atributo type sea text o password, en cuyo caso será el número entero de caracteres. </p>
+                            <pre>Ejemplo:<br/>&lt;form action=http://somesite.com/prog/adduser method=post&gt;
+    &lt;p&gt;
+        &lt;label for=nombre&gt;Nombre: &lt;/label&gt;
+            &lt;input type=text id=nombre name=nombre&gt;&lt;br&gt;
+        &lt;label for=apellido&gt;Apellido: &lt;/label&gt;
+            &lt;input type=text id=apellido name=apellido&gt;&lt;br&gt;
+        &lt;label&gt;&lt;input type=email name=email&gt;E-mail: &lt;/label&gt;&lt;br&gt;
+            &lt;input type=radio name=sexo value=hombre&gt;hombre&lt;br&gt;
+            &lt;input type=radio name=sexo value=mujer&gt;mujer&lt;br&gt;
+            &lt;input type=submit value=Enviar&gt; &lt;input type=reset&gt;
+    &lt;/p&gt;
+&lt;/form&gt;</pre>
+            </article>
+            <article>
+                <h4>Menú</h4>
+                <p>Para declarar el menú usamos el elemento <b>&lt;select&gt;</b> que puede tener los atributos <b>name, size y multiple</b>
+                    <br/>Después especificamos los elementos <b>&lt;option&gt;</b> del menú que tienen los atributos <b>value y selected</b></p>
+            <pre>Ejemplo: <br/>&lt;select name=menum size=3 multiple&gt;
+    &lt;option selected value=uno&gt;uno&lt;/option&gt;
+    &lt;option value=dos&gt;dos&lt;/option&gt;
+    &lt;option value=tres&gt;tres&lt;/option&gt;
+    &lt;option selected value=cuatro&gt;cuatro&lt;/option&gt;
+    &lt;option value=cinco&gt;cinco&lt;/option&gt;
+&lt;/select&gt;</pre>
+                        <p>El elemento <b>&lt;optgroup&gt;</b> se utiliza para crear un conjunto de opciones similares y tiene el atributo label.
+                            <br/>
+            <pre>Ejemplo:<br/>&lt;select name=menuo&gt;
+    &lt;option selected value=uno&gt;uno&lt;/option&gt;
+    &lt;optgroup label=dos&gt;
+    &lt;option value=dos_a&gt;dos - a&lt;/option&gt;
+    &lt;option value=dos_b&gt;dos - b&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;option selected value=tres&gt;tres&lt;/option&gt;
+&lt;/select&gt;</pre></p>
+            </article>
+            <article>
+                <h4>Editor de texto</h4>
+                <p>El elemento <b>&lt;textarea&gt;</b> se utiliza para representar un control para edición muti-línea de texto plano.
+                    <br/>Admite los atributos <b>name, cols y rows</b> para dar formato al cuadro.</p>
+                    <pre>Ejemplo:<br/>&lt;textarea name=texto_largo cols=20 rows=6&gt;
+    Este texto esta; contenido en el cuadro del
+    editor.
+&lt;/textarea&gt;</pre>
+            </article>
+            <article>
+                <h4>Lista de valores posibles</h4>
+                <p>El elemento <b>&lt;datalist&gt;</b> contiene un conjunto de elementos &lt;option&gt; que representan los valores disponibles para otros controles.
+                    <br/>El elemento datalist admite el atributo <b>id</b> y el elemento option contiene el atributo <b>value</b></p>
+                    <pre>Ejemplo:<br/>&lt;input name=sexo list=sexos&gt;
+&lt;datalist id=sexos&gt;
+    &lt;option value=mujer&gt;
+    &lt;option value=hombre&gt;
+&lt;/datalist&gt;</pre>
+                <h4>Botón</h4>
+                <p>El elemento <b>&lt;button&gt;</b> representa un elemento cliqueable de tipo botón que puede ser utilizado en formularios o en cualquier parte de la página que necesite un botón estándar y simple de aplicar.
+                    <br/>Tiene atributos como <b>name, value y type(submit, button o reset)</b>.</p>
+                    <pre>Ejemplo:<br/>&lt;button name=submit value=submit
+    type=submit&gt;Enviar&lt;IMG src=enviar.gif
+    alt=Enviar&gt;
+&lt;/button&gt;</pre>
+<pre>&lt;button name=reset type=reset&gt;Limpiar&lt;IMG
+    src=borrar.gif alt=Borrar&gt;
+&lt;/button&gt;</pre>
+            </article>
+            <h5>Multimedia y contenidos encajados</h5>
+            <article>
+                <h4>Plugins</h4>
+                <p>El elemento <b>&lt;embed&gt;</b> representa un punto de integración para una aplicación externa o de contenido interactivo
+                    <br/>Atributos que tiene:
+                    <br/><b>src:</b> la dirección URL del recurso que se está incrustado.
+                    <br/><b>type:</b> el tipo MIME que se va a usar para la selección del plug-in para crear una instancia.
+                    <br><i>Multipurpose Internet Mail Extensions o MIME son una serie de convenciones o especificaciones dirigidas al intercambio a través de Internet de todo tipo de archivos de forma transparente para el usuario. </i>
+                    <br/><b>parámetro del plugin:</b> por ejemplo <b>quality</b>.</p>
+                    <p>Ejemplo: &lt;embed src=juego.swf quality=high&gt;</p>
+            </article>
+            <article>
+                <h4>Marcos</h4>
+                <p>El elemento <b>&lt;iframe&gt;</b> representa un contexto de navegación anidado, el cual permite incrustrar otra página HTML en la página actual.
+                    <br/>Tiene atributos como <b>src(source), srcdoc, sandbox</b>(restricciones adicionales al contenido en el marco),<b>allowfullscreen, width, height...</b></p>
+                    <pre>Ejemplo:<br/>
+&lt;iframe id=&quot;inlineFrameExample&quot;
+    title=&quot;Inline Frame Example&quot;
+    width=&quot;300&quot;
+    height=&quot;200&quot;
+    src=&quot;https://www.openstreetmap.org/export/...&quot;&gt;
+&lt;/iframe&gt;</pre>
+            </article>
+            <article>
+                <h4>Audio y vídeo</h4>
+                <p>Los elementos <b>&lt;audio&gt; y &lt;video&gt;</b> sirven para insertar elementos multimedia.
+                    <br/>Admiten atributos como: <b>src, width(vídeo) y height(vídeo)</b></p>
+                    <pre>Ejemplo de audio:<br/>
+&lt;audio src=musica.mp3&gt;
+    El navegador no soporta audio
+&lt;/audio&gt;</pre>
+                <p>También admiten otros atributos como <b>controls, autoplay, muted, loop, preload="none|auto|metadata" </b>(variaciones en la forma en que el navegador carga el vídeo o audio) y <b>type</b> (por ejemplo: type="video/mp4").</p>
+                <pre>Ejemplo de vídeo:<br/>
+&lt;video controls&gt;
+    &lt;source src=video.mp4 type=&quot;video/mp4&quot;&gt;
+    &lt;source src=video.ogv type=&#39;&quot;video/ogg&quot;codecs=&quot;theora, vorbis&quot;&#39;&gt;
+    El navegador no soporta video
+&lt;/video&gt;</pre>
+                <p>Se puede dar valores al vídeo como por ejemplo el rango de reproducción:
+                    <br/>#t=[inicio][,fin] en segundos o horas:minutos:segundos</p>
+                <p>Existe el elemento <b>&lt;track&gt;</b> que va dentro de vídeo y se utiliza para especificar subtítulos, archivos de subtítulos u otros archivos que contienen texto, que deberían estar visibles cuando se reproducen los medios.
+                    <br/>Admite los atributos <b>src, kind(subtitles, captions, descriptions, chapters, metadata), srclang, label, default...</b></p>
+                    <pre>Ejemplo de track:<br/>
+&lt;video src=video.mp4&gt;
+    &lt;track kind=subtitles src=video.en.vtt 
+    srclang=en label=English&gt;
+    &lt;track kind=captions src=video.en.hoh.vtt 
+    srclang=en label=&quot;English for deaf&quot;&gt;
+    &lt;track kind=subtitles src=video.fr.vtt 
+    srclang=fr label=Fran&#231;ais&gt;
+    &lt;track kind=subtitles src=video.es.vtt
+    srclang=es label=Espa&#241;ol default&gt;
+        El navegador no soporta video
+&lt;/video&gt;</pre>
             </article>
         </section>
     </body>
