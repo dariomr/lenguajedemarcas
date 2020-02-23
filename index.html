@@ -10,17 +10,16 @@
     <body>
         <header>
             <h1>Manual de HTML y CSS</h1>
-            <h2>Creado por Darío Marín Rivarés. 1º DAM - IES Sierra de Guara, Huesca.</h2>
+            <h2><small>Creado por Darío Marín Rivarés. 1º DAM - IES Sierra de Guara, Huesca.</small></h2>
             <nav class="menu">
                 <ul>
                     <li><a href="index.html">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">Ejemplos</a></li>
+                    <li><a href="#CSS">CSS</a></li>
                 </ul>
             </nav>
-        <header>
+        </header>
 
-        <section title="HTML">   
+        <section title="HTML" id="HTML">   
             <h3>HTML</h3>
 
             <h5>Comienzo del documento HTML</h5>
@@ -353,6 +352,101 @@
         El navegador no soporta video
 &lt;/video&gt;</pre>
             </article>
+        </section>
+
+
+        <section title="CSS" id="CSS">
+            <h3>CSS</h3>
+
+            <h5>Sintaxis CSS</h5>
+            <article>
+                <h4>Introducción</h4>
+                <p>La sintaxis de todos los elementos en CSS es así:
+                <br/><pre>selector { propiedad: valor; }</pre></p>
+                <pre>Ejemplo:<br/>
+body { background-color: yellow;
+            color: blue;
+            margin-left: 50%; }
+                </pre>
+                <h4>Colores</h4>
+                <p><b>Nombre:</b> black, white, grey, yellow, orange, blue, red, green, purple...
+                    <br/><b>Modelo RGB:</b> <u>Hexadecimal</u>: #RGB (0-F) o #RRGGBB (00-FF), <u>rgb/rgba:</u> rgb(rojo,verde,azul) - (0-255) o rgb(r%, v%, a%) - (0-100)
+                    <br/>Es importante elegir bien el contraste entre los colores y tener en cuenta el daltonismo. Para ello hay herramientas que comprueban la validez de las combinaciones de colores.</p>
+            </article>
+            <article>
+                <h4>Clases</h4>
+                <p>Para crear diferentes estilos de un mismo elemento podemos utilizar clases.</p>
+                <pre><b>Ejemplo CSS:</b><br/>
+p { color: red; }
+p.morado { color: purple; }
+                        </pre>
+                <pre><b>El contenido del html sería este:</b><br/>
+&lt;p&gt;Este texto es rojo&lt;/p&gt;
+&lt;p class="morado"&gt;Este texto es morado &lt;/p&gt;</pre>
+            </article>
+            <article>
+                <h4>Unidades</h4>
+                <p>Se usan porcentajes u otras medidas como:
+                    <br/><b>Relativas:</b> em, ex
+                    <br/><b>Aboslutas:</b> px, pt, pc, in, cm, mm
+                    <br/><b>Ángulos:</b> deg, grad, rad
+                    <br/><b>Duración:</b> s, ms
+                    <br/><b>Frecuencia:</b> Hz, kHz
+                    <br/><b>Resolución:</b> dpi, dpdm, dppx</p>
+            </article>
+            <article>
+                <h4>Fuentes</h4>
+                <p>El atributo para definir el tipo de fuente es <b>font-family.</b></p>
+                <p>Existen familias genéricas de fuentes que son las más utilizadas:
+                    <br/><b>serif</b>: Times New Roman, Garamond
+                    <br/><b>sans-serif</b>: Arial, Verdana, Helvética
+                    <br/><b>monospace</b>: Courier, Courier New
+                    <br/><b>fantasy</b>: western</p>
+                <p>El atributo <b>font-style</b> nos permite cambiar el estilo de la fuente de ese elemento con los atributos <b>normal, italic y obloque</b>.
+                    <br/>El atributo <b>font-variant</b> nos permite dar los valores como <b>normal y small-caps</b> a la fuente.
+                    <br/>El atributo <b>font-weight</b> admite valores como <b>bolder, ligher:100-900; normal:400 o bold:700</b>
+                    <br/>El atributo <b>font-height</b> que sirve para determinal la altura de la fuente y admite los atributos: <b>normal o una medida</b>
+                    <br/>El atributo <b>font-size</b> que determina el tamaño de letra de la fuente, con atributos absolutos(small, medium, large...), atributos relativos (larger, smaller) o medidas</p>
+            </article>
+            <article>
+                <h4>Texto</h4>
+                <p>Podemos definir el sangrado con el atributo <b>text-indent</b> y la alineación del texto con <b>text-align</b> (left, right, center, justify)
+                    <br/>El atributo <b>letter-spacing y word-spacing</b> se usan para modificar los espacios
+                    <br/>El atributo <b>text-transformation</b> se utiliza para dar un formato al texto con valores como <b>capitalize, uppercase, lowercase, none</b>
+                    <br/>El atributo <b>text-decoration</b> también da formato al texto con valores como <b>none, underline, overline, line-through, blink</b>
+                    <br/>El atributo <b>vertical-align</b> se usa para la alineación vertical del texto con valores como <b>baseline, middle, sub, super, text-top, text-bottom, top, bottom</b></p>
+            </article>
+            <article>
+                <h4>Listas</h4>
+                <p>Atributo <b>list-style-type</b> para listas que pueden ser:
+                    <br/><b>Ordenadas</b>: lower-roman, upper-roman, decimal, decimal-leading-zero, upper-alpha, lower-alpha, hebrew, armenian, ...
+                    <br/><b>No ordenadas</b>: disc, circle, square, ...
+                    <br/>Atributos <b>list-style-image, list-style-position (outside,inside) y list-style</b></p>
+            </article>
+            <article>
+                <h4>Fondo de objeto</h4>
+                <p>Atributos para el fondo de un elemento:
+                    <br/><b>background-color, background-image, background-repeat(repeat-x, repeat-y, no-repeat, none), background-attachment(scroll, fixed), background-position(porcentaje, medida, top, bottom, center...)</b></p>
+            </article>
+
+            <h5>Modelo de caja</h5>
+            <article>
+                <h4>Margen</h4>
+                <p>Atributos para definir el margen como: <b>margin, margin-top, margin-right, margin-bottom, margin-left</b></p>
+                <pre>Ejemplo:<br/>
+body { margin-top: 150px;
+            magin-right: 50px;
+            margin-bottom: 20px;
+            margin-left: 100px; }
+                        </pre>
+                <p>Para el <b>padding</b> funciona igual.</p>
+            </article>
+            <article>
+                <h4>Bordes</h4>
+                <p>Atributos para los bordes: <b>border-width</b>(valor, thin, medium, thick), <b>border-style</b>(none, dotted, dashed, solid, double, groove, ridge, inset, outset, hidden), <b>border-color</b></p>
+                <img src="https://www.creatuwebnicaragua.com/wp-content/uploads/2015/08/modelo-de-caja.gif" width="405" height="308" alt="Modelo de caja">
+            </article>
+            
         </section>
     </body>
 </html>
