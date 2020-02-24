@@ -98,6 +98,7 @@
                 <p>Aporta información de contacto para su elemento &lt;article&gt; más cercano o el elemento principal &lt;body&gt;; en el último caso lo aplica a todo el documento.
                     <br/>Generalmente la información de contacto de una persona u organización se suele ubicar en el &lt;footer&gt; del documento HTML.</p>
             </article>
+            <img src="https://imacreste.com/wp-content/uploads/etiquetas-estructurales-html5.jpg" width="600px" height="400px" alt="formato de documento HTML">
 
             <h5>Agrupación de contenido</h5>
             <article>
@@ -446,7 +447,83 @@ body { margin-top: 150px;
                 <p>Atributos para los bordes: <b>border-width</b>(valor, thin, medium, thick), <b>border-style</b>(none, dotted, dashed, solid, double, groove, ridge, inset, outset, hidden), <b>border-color</b></p>
                 <img src="https://www.creatuwebnicaragua.com/wp-content/uploads/2015/08/modelo-de-caja.gif" width="405" height="308" alt="Modelo de caja">
             </article>
-            
+
+            <h5>CSS avanzado</h5>
+            <article>
+                <h4>Selectores</h4>
+                <p><b>De elemento: </b> #id_elemento
+                    <br/><b>De clase: </b> .nombre_clase
+                    <br/><b>Combinación: </b> varios elementos separados por comas, y todos adquieren las mismas propiedades
+                    <br/><b>Elemento universal: *</b>
+                    <br/><b>Atributos: </b>elemento[atributo], elemento[atributo="valor"]
+                    <br/><b>Descendientes: </b> contenedor contenido *
+                    <br/><b>Hijos: </b> contenedor > contenido. Selecciona los elementos que son hijos directos del primer elemento.
+                    <br/><b>Adyacentes: </b> elemento1 + elemento2(selecciona hermanos adyacentes, sólo el siguiente), elemento1 ~ elemento2 (cualquiera que lo siga)</p>
+                    <p><b>Pseudo clases:</b>
+                        <br/>Enlaces como :link(normal) o :visited(visitado)
+                        <br/>Acción del usuario como :hover (activado por el ratón), :focus(activado por el teclado) o :active(pinchado)
+                        <br/>Formularios como :enabled o :checked y Estructurales</p>
+                    <p><b>Pseudo elementos</b>
+                        <br/>::first-line, ::first-letter</p>
+            </article>
+            <article>
+                <h4>Visualización</h4>
+                <p><b>Atributo display con valores como </b>inline</b>(anchura y altura necesarias), <b>block</b>(ancho completo y altura necesaria, width y height), <b>inline-block</b>(inline con width y height) y <b>none</b>(en el documento pero no visibles)</p>
+            </article>
+            <article>
+                <h4>Posicionamiento</h4>
+                <p>Atributo <b>position</b> con valores <b>static</b>(normal), <b>relative</b>(relativo a sí mismo), <b>absolute</b>(relativo a su ancestro) y <b>fixed</b>(relativo a la ventana)
+                    <br/>Atributos de controles como <b>top, bottom, left, right</b></p>
+            </article>
+            <article>
+                <h4>Elementos flotantes</h4>
+                <p>Atributo <b>float</b>: reposiciona objetos a izquierda o derecha, no se superponen entre sí, salen del flujo de posicionamiento, valores: left y right
+                    <br/>Atributo <b>clear</b>: renueva el flujo (tras float) y admite valores left right y both.</p>
+            </article>
+            <article>
+                <h4>Acceso</h4>
+                <p>Atributo <b>overflow</b>: valores visible, hidden, scroll, auto
+                    <br/>Atributo <b>z-index</b>: valor númerico</p>
+            </article>
+            <article>
+                <h4>Especificidad</h4>
+                <p>Atributo “style”
+                    <br/>Elemento “id”
+                    <br/>Clase, pseudo-clase y atributo
+                    <br/>Número de elementos en la declaración</p>
+                <p>Obtenemos un valor específico de ese elemento de estilo. Ejemplo:</p>
+                <pre>Ejemplo:<br/>
+div #miParrafo { color: blue; }</pre>
+                <p>Estilo: 0
+                    <br/>Id: 1
+                    <br/>Clases: 0
+                    <br/>Número de elementos: 1
+                    <br/>Entonces el valor específico es: 0101</p>
+            </article>
+            <article>
+                <h4>Media Queries</h4>
+                <p>Declaración: <b>@media [queries]{ declaraciones CSS }</b></p>
+                <p>Queries es una lista de <b>media_query</b></p>
+                <p><b>media_query</b>: [ONLY|NOT] media_type(braille print screen tv...)|query [AND query] *</p>
+                <p>Declaración de una query: <b>(característica: valor)</b></p>
+                <p>Características: 
+                    <br/><b>device-width</b>: min|max-device-width
+                    <br/><b>device-height</b>: min|max-devide-height
+                    <br/><b>orientation</b>: portrait|landscape
+                    <br/><b>color</b>: número de bits por color
+                    <br/><b>resolution</b>: en dpi o dpcm</p>
+                <pre>Ejemplo:<br/>
+ @media (min-width: 800px) {
+    #p1 { width: 80%; }
+    #p2 { width: 150px;
+            height: 150px; }}
+
+ @media (min-width: 640px) and (max-width: 799px) {
+     #p1 { width: 50%; }
+     #p2 { width: 100px;
+            height: 100px; }}</pre>
+                <p>p1 y p2 son párrafos con esa id</p>
+            </article>
         </section>
     </body>
 </html>
